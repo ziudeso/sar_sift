@@ -65,7 +65,7 @@ solution1,rmse = ransac.least_square(better_kp1,better_kp2)
 
 #compute MI
 common1,common2 = image_fusion.common_region(gray1,gray2,solution1)
-mi = MI.MI(common1,common1)
+mi = MI.MI(common1,common1) #TODO: Should it be common1, common2?
 
 #display
 image_match = display.display(img1,img2,better_kp1,better_kp2)
